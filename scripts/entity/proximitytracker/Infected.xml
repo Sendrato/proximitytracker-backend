@@ -6,6 +6,7 @@
 
 	<message name="Infected">
 		<message name="ProximityUUID">
+			<property name="InsertionDate" type="date"/>
 			<property name="UUID" type="string"/>
 		</message>
 	</message>

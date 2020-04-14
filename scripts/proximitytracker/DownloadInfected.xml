@@ -1,19 +1,31 @@
 <navascript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.navajo.nl/schemas/navascript.xsd">
-	<message name="__Mongo__">
-		<property name="Datasource" type="string" value="proximitytracker" />
-		<property name="Collection" type="string" value="InfectedUUID" />
-		<property name="MessageName" type="string" value="InfectedUUID" />
-		<property name="Multiple" type="boolean" value="true" />
-	</message>
-	
-	<message name="Mongo">
-		<property name="Query">
-			<expression value="MongoTuple()"/>
-		</property>
-	</message>
+	<map.mongo_query debug="true" datasource="'proximitytracker'" collection="'InfectedUUID'" messageName="'InfectedUUID'" multiple="true" appendTo="'/'">
+		<mongo_query.query>
+			<value>
+				'
+				{
+				"InsertionDate" : {"$gte" : "?" }
+				}
+				'
+			</value>
+		</mongo_query.query>
+		<mongo_query.addParameter value="ParseDate(FormatDate(TODAY,'yyyy-MM-dd'),'yyyy-MM-dd')" />
+	</map.mongo_query>
 
-	<map.navajomap useCurrentOutDoc="true">
-		<navajomap.callwebservice name="'mongo/ProcessQueryCustomMongo'" append="''"/>
-	</map.navajomap>
+	<message name="Infected">
+		<map.joinmessage>
+			<joinmessage.join message1="'/InfectedUUID'" type="'outer'" ignoreSource="true" />
+			<message name="ProximityUUID">
+				<map ref="resultMessage">
+					<property name="UUID">
+						<expression value="$property('UUID')" />
+					</property>
+					<property name="InsertionDate">
+						<expression value="$property('InsertionDate')" />
+					</property>
+				</map>
+			</message>
+		</map.joinmessage>
+	</message>
 
 </navascript>
