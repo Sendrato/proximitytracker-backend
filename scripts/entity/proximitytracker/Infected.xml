@@ -1,3 +1,13 @@
-<navascript>
+<navascript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.navajo.nl/schemas/navascript.xsd">
+	<operations>
+		<operation entity="Infected" service="proximitytracker/UploadInfected" method="PUT"/>
+		<operation entity="Infected" service="proximitytracker/DownloadInfected" method="GET"/>
+	</operations>
+
+	<message name="Infected">
+		<message name="ProximityUUID">
+			<property name="UUID" type="string"/>
+		</message>
+	</message>
 
 </navascript>
