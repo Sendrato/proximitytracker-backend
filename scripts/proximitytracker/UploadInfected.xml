@@ -1,0 +1,21 @@
+<navascript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.navajo.nl/schemas/navascript.xsd">
+	<message name="__Mongo__">
+		<property name="Datasource" type="string" value="proximitytracker" />
+		<property name="Collection" type="string" value="InfectedUUID" />
+		<property name="MessageName" type="string" value="InfectedUUID" />
+		<property name="Multiple" type="boolean" value="true" />
+	</message>
+
+	<message name="InfectedUUID">
+		<map ref="[/Infected/ProximityUUID]">
+			<property name="UUID">
+				<expression value="[UUID]"/>
+			</property>
+		</map>	
+	</message>
+
+	<map.navajomap useCurrentOutDoc="true">
+		<navajomap.callwebservice name="'mongo/ProcessInsertMongo'"/>
+	</map.navajomap>
+	
+</navascript>

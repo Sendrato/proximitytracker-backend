@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsl>
+	<map object="com.dexels.navajo.mongo.adapter.AdvancedQueryMongoAdapter">
+		<field name="query">
+			<expression value="[/Mongo/Query]" />
+		</field>
+		<field name="columnFilter" condition="?[/Mongo/Filter]">
+			<expression value="[/Mongo/Filter]" />
+		</field>
+		<field name="sortAsc" condition="?[/Mongo/SortAsc]">
+			<expression value="[/Mongo/SortAsc]" />
+		</field>
+		<field name="sortDesc" condition="?[/Mongo/SortDesc]">
+			<expression value="[/Mongo/SortDesc]" />
+		</field>
+		<field name="limit">
+            <expression condition="?[/Mongo/Limit]" value="[/Mongo/Limit]" />
+			<expression value="50000" />
+		</field>
+        <field name="appendTo">
+            <expression value="'/'" />
+        </field>
+	</map>
+</tsl>

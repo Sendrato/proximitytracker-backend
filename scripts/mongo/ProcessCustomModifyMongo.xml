@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsl>
+	<map object="com.dexels.navajo.mongo.adapter.CustomModifyMongoAdapter">
+        <field name="query">
+            <expression value="[/Mongo/Query]" />
+        </field>
+         <field name="modify">
+            <expression value="[/Mongo/Modify]" />
+        </field>
+    </map>
+</tsl>
+
+

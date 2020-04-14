@@ -1,0 +1,30 @@
+<tml>
+	<message name="alias" />
+	<message name="resources" />
+	<message name="deployments">
+		<message name="production">
+			<message name="resources">
+				<message name="proximitytracker">
+					<property name="type" value="mongodb" />
+					<property name="url" value="mongodb://mongo-evntzapp/proximitytracker?replicaSet=sendrato" />
+				</message>
+			</message>
+		</message>
+		<message name="test">
+			<message name="resources">
+				<message name="proximitytracker">
+					<property name="type" value="mongodb" />
+					<property name="url" value="mongodb://cloud/proximitytracker" />
+				</message>
+			</message>
+		</message>
+		<message name="develop">
+			<message name="resources">
+				<message name="proximitytracker">
+					<property name="type" value="mongodb" />
+					<property name="url" value="mongodb://127.0.0.1/proximitytracker" />
+				</message>
+			</message>
+		</message>
+	</message>
+</tml>

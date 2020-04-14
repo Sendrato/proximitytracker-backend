@@ -1,0 +1,25 @@
+<navascript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.navajo.nl/schemas/navascript.xsd">
+	<methods>
+		<method name="proximitytracker/UploadInfected" />
+	</methods>
+
+	<message name="Infected">
+		<message name="ProximityUUID" type="array">
+			<message name="ProximityUUID">
+				<property name="UUID">
+					<expression value="'aap'" />
+				</property>
+			</message>
+			<message name="ProximityUUID">
+				<property name="UUID">
+					<expression value="'noot'" />
+				</property>
+			</message>
+			<message name="ProximityUUID">
+				<property name="UUID">
+					<expression value="'mies'" />
+				</property>
+			</message>
+		</message>
+	</message>
+</navascript>
