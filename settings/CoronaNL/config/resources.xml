@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tml>
+    <message name="deployments">
+        <!-- Definitions for default environment -->
+        <message name="default"/>
+    </message>
+</tml>

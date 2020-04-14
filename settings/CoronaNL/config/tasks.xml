@@ -1,0 +1,79 @@
+<tml documentImplementation="SAXP">
+	<message name="tasks" type="array">
+		<message index="0" name="tasks" type="array_element">
+			<property direction="out" name="id" value="CalculateStatistics1" type="string" />
+			<property direction="out" name="username" value="ROOT" type="string" />
+			<property direction="out" name="password" value="" type="string" />
+			<property direction="out" name="webservice" value="everywear/statistics/ProcessComputeTransactionTypeTotals" type="string" />
+			<property direction="out" name="proxy" value="false" type="boolean" />
+			<property direction="out" name="keeprequestresponse" value="false" type="boolean" />
+			<property direction="out" name="trigger" value="offsettime:5m" type="string" />
+			<property direction="out" name="workflowdef" type="string" />
+			<property direction="out" name="workflowid" type="string" />
+			<property direction="out" name="taskdescription" value="" type="string" />
+			<property direction="out" name="clientid" value="" type="string" />
+			<property direction="out" name="persisted" value="false" type="boolean" />
+			<property direction="out" name="forcesync" value="false" type="boolean" />
+		</message>
+		<message index="0" name="tasks" type="array_element">
+			<property direction="out" name="id" value="CalculateStatistics2" type="string" />
+			<property direction="out" name="username" value="ROOT" type="string" />
+			<property direction="out" name="password" value="" type="string" />
+			<property direction="out" name="webservice" value="everywear/statistics/ProcessComputeProductTotals" type="string" />
+			<property direction="out" name="proxy" value="false" type="boolean" />
+			<property direction="out" name="keeprequestresponse" value="false" type="boolean" />
+			<property direction="out" name="trigger" value="offsettime:5m" type="string" />
+			<property direction="out" name="workflowdef" type="string" />
+			<property direction="out" name="workflowid" type="string" />
+			<property direction="out" name="taskdescription" value="" type="string" />
+			<property direction="out" name="clientid" value="" type="string" />
+			<property direction="out" name="persisted" value="false" type="boolean" />
+			<property direction="out" name="forcesync" value="false" type="boolean" />
+		</message>
+		<message index="0" name="tasks" type="array_element">
+			<property direction="out" name="id" value="CalculateStatistics4" type="string" />
+			<property direction="out" name="username" value="ROOT" type="string" />
+			<property direction="out" name="password" value="" type="string" />
+			<property direction="out" name="webservice" value="everywear/statistics/ProcessComputePointOfSaleTotals" type="string" />
+			<property direction="out" name="proxy" value="false" type="boolean" />
+			<property direction="out" name="keeprequestresponse" value="false" type="boolean" />
+			<property direction="out" name="trigger" value="offsettime:5m" type="string" />
+			<property direction="out" name="workflowdef" type="string" />
+			<property direction="out" name="workflowid" type="string" />
+			<property direction="out" name="taskdescription" value="" type="string" />
+			<property direction="out" name="clientid" value="" type="string" />
+			<property direction="out" name="persisted" value="false" type="boolean" />
+			<property direction="out" name="forcesync" value="false" type="boolean" />
+		</message>
+		<message index="0" name="tasks" type="array_element">
+			<property direction="out" name="id" value="CalculateStatistics3" type="string" />
+			<property direction="out" name="username" value="ROOT" type="string" />
+			<property direction="out" name="password" value="" type="string" />
+			<property direction="out" name="webservice" value="everywear/statistics/ProcessComputePointOfSaleTemplateTotals" type="string" />
+			<property direction="out" name="proxy" value="false" type="boolean" />
+			<property direction="out" name="keeprequestresponse" value="false" type="boolean" />
+			<property direction="out" name="trigger" value="offsettime:5m" type="string" />
+			<property direction="out" name="workflowdef" type="string" />
+			<property direction="out" name="workflowid" type="string" />
+			<property direction="out" name="taskdescription" value="" type="string" />
+			<property direction="out" name="clientid" value="" type="string" />
+			<property direction="out" name="persisted" value="false" type="boolean" />
+			<property direction="out" name="forcesync" value="false" type="boolean" />
+		</message>
+		<message index="0" name="tasks" type="array_element">
+			<property direction="out" name="id" value="CalculateStatistics5" type="string" />
+			<property direction="out" name="username" value="ROOT" type="string" />
+			<property direction="out" name="password" value="" type="string" />
+			<property direction="out" name="webservice" value="everywear/statistics/ProcessComputeTotals" type="string" />
+			<property direction="out" name="proxy" value="false" type="boolean" />
+			<property direction="out" name="keeprequestresponse" value="false" type="boolean" />
+			<property direction="out" name="trigger" value="offsettime:1m" type="string" />
+			<property direction="out" name="workflowdef" type="string" />
+			<property direction="out" name="workflowid" type="string" />
+			<property direction="out" name="taskdescription" value="" type="string" />
+			<property direction="out" name="clientid" value="" type="string" />
+			<property direction="out" name="persisted" value="false" type="boolean" />
+			<property direction="out" name="forcesync" value="false" type="boolean" />
+		</message>
+	</message>
+</tml>
